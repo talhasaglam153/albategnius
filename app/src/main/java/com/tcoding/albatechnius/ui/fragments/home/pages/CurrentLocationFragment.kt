@@ -1,24 +1,24 @@
-package com.tcoding.albatechnius.ui.fragments
+package com.tcoding.albatechnius.ui.fragments.home.pages
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.tcoding.albatechnius.R
-import com.tcoding.albatechnius.databinding.FragmentHomeBinding
+import com.tcoding.albatechnius.databinding.FragmentCurrentLocationBinding
+import com.tcoding.albatechnius.databinding.FragmentProductBinding
 
 
-class HomeFragment : Fragment() {
+class CurrentLocationFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentCurrentLocationBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentCurrentLocationBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
     }
