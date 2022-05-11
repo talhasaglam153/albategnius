@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.tcoding.albatechnius.databinding.FragmentCurrentLocationBinding
 import com.tcoding.albatechnius.databinding.FragmentProductBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class CurrentLocationFragment : Fragment() {
 
     private var _binding: FragmentCurrentLocationBinding? = null

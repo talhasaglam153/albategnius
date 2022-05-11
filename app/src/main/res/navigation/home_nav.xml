@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.tcoding.albatechnius.ui.fragments.home.pages.HomeFragment"
+        android:label="fragment_home"
+      />
+    <fragment
+        android:id="@+id/currentLocationFragment"
+        android:name="com.tcoding.albatechnius.ui.fragments.home.pages.CurrentLocationFragment"
+        android:label="fragment_current_location"
+         />
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.tcoding.albatechnius.ui.fragments.home.pages.ProductFragment"
+        android:label="fragment_product"
+         />
+    <fragment
+        android:id="@+id/droneInformationFragment"
+        android:name="com.tcoding.albatechnius.ui.fragments.home.pages.DroneInformationFragment"
+        android:label="fragment_drone_information"
+        />
+</navigation>

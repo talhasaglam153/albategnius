@@ -6,8 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.tcoding.albatechnius.databinding.FragmentDroneInformationBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class DroneInformationFragment : Fragment() {
 
     private var _binding: FragmentDroneInformationBinding? = null

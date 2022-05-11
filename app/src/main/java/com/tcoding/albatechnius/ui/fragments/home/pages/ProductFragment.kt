@@ -6,8 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.tcoding.albatechnius.databinding.FragmentProductBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class ProductFragment : Fragment() {
 
     private var _binding: FragmentProductBinding? = null
