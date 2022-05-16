@@ -20,7 +20,7 @@ import retrofit2.Retrofit
 import retrofit2.awaitResponse
 import retrofit2.converter.gson.GsonConverterFactory
 
-const val BASE_URL = "https://frosty-lewin.5-9-253-136.plesk.page/"
+const val BASE_URL = "https://frosty-lewin.5-9-253-136.plesk.page"
 @AndroidEntryPoint
 class DroneInformationFragment : Fragment() {
     private var _binding: FragmentDroneInformationBinding? = null
@@ -38,12 +38,14 @@ class DroneInformationFragment : Fragment() {
         _binding = FragmentDroneInformationBinding.inflate(inflater, container, false)
         val view = binding.root
         viewModel = ViewModelProvider(this).get(DroneViewModel::class.java)
-        getCurrentData()
+      //  getCurrentData()
+
+        viewModel.loadData()
         viewModel.getObserverLiveData().observe(viewLifecycleOwner,object : Observer<Drone> {
             override fun onChanged(t: Drone?) {
                 binding.textViewDroneHiz.text = t!!.speed.toString()
 
-                getCurrentData()
+             //   getCurrentData()
             }
 
         })
@@ -56,7 +58,7 @@ class DroneInformationFragment : Fragment() {
         _binding = null
     }
 
-    fun getCurrentData() {
+    /*fun getCurrentData() {
         val api = Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
@@ -81,7 +83,7 @@ class DroneInformationFragment : Fragment() {
             }
         }
 
-    }
+    }*/
 
 
 }

@@ -14,7 +14,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 class AppModule {
 
-    var baseUrl = "https://frosty-lewin.5-9-253-136.plesk.page"
+    var baseUrl = "https://frosty-lewin.5-9-253-136.plesk.page/"
     @Provides
     @Singleton
     fun getRetrofitServiceInstance(retrofit : Retrofit) : RetrofitServiceInstance

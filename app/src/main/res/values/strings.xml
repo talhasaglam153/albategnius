@@ -1,5 +1,39 @@
 <resources>
-    <string name="app_name">Albatechnius</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Albategnius</string>
+    <string name="viewall">View All</string>
+    <string name="home">Home</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="nodata">No Data Found</string>
+
+    <string name="first_title">Remote Control</string>
+    <string name="first_subtitle">The drone can be controlled by remote</string>
+    <string name="second_title">Autonomous Flight</string>
+    <string name="second_subtitle">The drone can move autonomously</string>
+    <string name="third_title">Drone Speed</string>
+    <string name="third_subtitle">Drone speed can be displayed</string>
+    <string name="fourth_title">Current Location</string>
+    <string name="fourth_subtitle">Current location of the drone can be observed</string>
+
+
+    <string name="information">Information!</string>
+
+    <string name="getstarted">Get Started</string>
+
+    <string name="ok">Ok</string>
+
+
+
+    <string name="no_connection">No Internet Connection</string>
+    <string name="cancel">Cancel</string>
+    <string name="error">Error</string>
+    <string name="go_to_settings">Go To Settings</string>
+
+    <string-array name="notification_array">
+        <item>15sec</item>
+        <item>30sec</item>
+        <item>1min</item>
+        <item>2mins</item>
+        <item>5mins</item>
+    </string-array>
 </resources>

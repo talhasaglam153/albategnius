@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface RetrofitServiceInstance {
 
-    @GET("/hezarfen/api.php")
+    @GET("hezarfen/api.php")
     fun getData() : Call<Drone>
 }

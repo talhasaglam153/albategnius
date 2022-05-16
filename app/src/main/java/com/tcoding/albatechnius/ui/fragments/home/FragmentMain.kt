@@ -31,7 +31,7 @@ class FragmentMain : Fragment() {
 
 
     private fun setupTabBar() {
-        binding.bottomNavBar.setItemSelected(R.id.product, true) // Bottomun hareket özelliğini home ile eşleştirdim demek istiyoruz..
+        binding.bottomNavBar.setItemSelected(R.id.home, true) // Bottomun hareket özelliğini home ile eşleştirdim demek istiyoruz..
         binding.bottomNavBar.setOnItemSelectedListener {
             when(it){
                 R.id.home -> childFragmentManager.primaryNavigationFragment?.findNavController()?.navigate(R.id.homeFragment)

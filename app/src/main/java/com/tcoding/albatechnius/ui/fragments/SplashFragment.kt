@@ -27,8 +27,8 @@ class SplashFragment : Fragment() {
         val view = binding.root
 
         Handler(Looper.getMainLooper()).postDelayed({
-            findNavController().navigate(R.id.action_splashFragment_to_fragmentMain)
-        }, 3000)
+            findNavController().navigate(R.id.action_splashFragment_to_fragmentAppIntro)
+        }, 5100)
 
         return view
     }
