@@ -37,7 +37,7 @@ class FragmentMain : Fragment() {
                 R.id.home -> childFragmentManager.primaryNavigationFragment?.findNavController()?.navigate(R.id.homeFragment)
                 R.id.product -> childFragmentManager.primaryNavigationFragment?.findNavController()?.navigate(R.id.productFragment)
                 R.id.droneinfo -> childFragmentManager.primaryNavigationFragment?.findNavController()?.navigate(R.id.droneInformationFragment)
-                R.id.currentlocation -> childFragmentManager.primaryNavigationFragment?.findNavController()?.navigate(R.id.currentLocationFragment)
+                R.id.currentlocation -> childFragmentManager.primaryNavigationFragment?.findNavController()?.navigate(R.id.mapsFragment)
 
             }
         }

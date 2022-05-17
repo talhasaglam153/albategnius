@@ -30,4 +30,6 @@ class CurrentLocationFragment : Fragment() {
     }
 
 
+
+
 }

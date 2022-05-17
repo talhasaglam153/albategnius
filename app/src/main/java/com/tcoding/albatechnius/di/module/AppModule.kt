@@ -15,6 +15,21 @@ import javax.inject.Singleton
 class AppModule {
 
     var baseUrl = "https://frosty-lewin.5-9-253-136.plesk.page/"
+   /* @Provides
+    @Singleton
+    fun getRetrofitServiceInstance(retrofit : Retrofit) : RetrofitServiceInstance
+    {
+        return retrofit.create(RetrofitServiceInstance::class.java)
+    }
+
+    @Singleton
+    @Provides
+    fun getRetroInstance(): Retrofit {
+        return Retrofit.Builder().baseUrl(baseUrl)
+            .addConverterFactory(GsonConverterFactory.create()).build()
+    }
+*/
+
     @Provides
     @Singleton
     fun getRetrofitServiceInstance(retrofit : Retrofit) : RetrofitServiceInstance
