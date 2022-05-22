@@ -9,10 +9,9 @@ plugins {
 android {
     compileSdk 32
 
-    buildFeatures {
-        viewBinding = true
+    viewBinding {
+        enabled = true
     }
-
     defaultConfig {
         applicationId "com.tcoding.albatechnius"
         minSdk 24
