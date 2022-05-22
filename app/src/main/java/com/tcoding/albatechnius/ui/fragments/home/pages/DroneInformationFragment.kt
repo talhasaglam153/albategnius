@@ -45,7 +45,9 @@ class DroneInformationFragment : Fragment() {
 
         viewModel.getObserverLiveData().observe(viewLifecycleOwner,object : Observer<Drone> {
             override fun onChanged(t: Drone?) {
-                binding.textViewDroneHiz.text = t!!.hiz.toString()
+                // Düzenleme Yapılacak Default 20 mph ayarlaması yapıldı
+               // binding.textViewDroneHiz.text = t!!.hiz.toString()
+                binding.textViewDroneHiz.text = "20"
                getCurrentData()
             }
 
