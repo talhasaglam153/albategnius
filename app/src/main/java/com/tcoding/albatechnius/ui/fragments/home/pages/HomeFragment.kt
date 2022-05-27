@@ -1,10 +1,14 @@
 package com.tcoding.albatechnius.ui.fragments.home.pages
 
+import android.Manifest
+import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.core.content.ContextCompat
 import com.tcoding.albatechnius.R
 import com.tcoding.albatechnius.databinding.FragmentHomeBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -21,15 +25,17 @@ class HomeFragment : Fragment() {
     ): View? {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view = binding.root
+
         binding.textViewDroneInfo1.setText(droneInfo1())
         binding.textViewDroneInfo2.setText(droneInfo2())
         binding.textViewDroneInfo3.setText(droneInfo3())
         return view
     }
 
+
     fun droneInfo1() : String {
         val droneInfo =
-            " Sürü halde çalışacak Tarımsal İlaçlama ve sürü halinde keşif, gözetleme yapması planlanan İha’lara ait algoritmaları işlemek için otopilotlar ile uçuş bilgisayarları kullanılması planlanmaktadır. Bunun yanında kablosuz haberleşme ve gps bağlantıları da kullanılacaktır. Aşağıda hem yazılıma ait ortam bilgisi, hem de altyapı belirtilmektedir\n\n";
+            " Keşif, gözetleme yapması planlanan İha’ya ait algoritmaları işlemek için otopilotlar ile uçuş bilgisayarları kullanılması planlanmaktadır. Bunun yanında kablosuz haberleşme ve gps bağlantıları da kullanılacaktır. Aşağıda hem yazılıma ait ortam bilgisi, hem de altyapı belirtilmektedir\n\n";
         val droneInfo2 =
             "1-)Pixhawk 2.4.8 Versiyonu(Otopilot)\n-Gelişmiş 32-bit ARM CortexM4 yüksek performanslı işlemciler, NuttX RTOS gerçek zamanlı işletim sistemini çalıştırabilir\n-14 PWM / servo çıkışı\n-Veriyolu arayüzü (UART, I2C, SPI, CAN)\n-Otomatik ve manuel mod\n-32bit STM32F427 Cortex M4, FPU ile birlikte\n-32-bit STM32F103 arızaya dayanıklı ortak işlemci\n-L3GD20H 16 bit jiroskop\n-X4HBA 303H 14 bit ivmeölçer / manyetometre\n-MPU 6000 3 eksenli ivmeölçer / jiroskop\n-MS5607 barometresi\n\n";
 

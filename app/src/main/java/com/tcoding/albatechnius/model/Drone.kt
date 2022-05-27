@@ -1,7 +1,11 @@
 package com.tcoding.albatechnius.model
 
 data class Drone(
-    val x : Int,
-    val y : Int,
-    var hiz: Int
+    val x : Double,
+    val y : Double,
+    var hiz: Int,
+    var battery : Int,
+    var mode : String,
+    var h: Int,
+    var flag : Int
 )

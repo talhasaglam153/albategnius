@@ -10,14 +10,20 @@ import androidx.recyclerview.widget.RecyclerView
 import com.tcoding.albatechnius.R
 import com.tcoding.albatechnius.model.Product
 
-class ProductAllAdapter(var productList : List<Product>) : RecyclerView.Adapter<ProductAllAdapter.MyCustomHolderLastView>() {
+class HomeProductAdapter(var productList : List<Product>, var clickItem:(position : Int) -> Unit) : RecyclerView.Adapter<HomeProductAdapter.MyCustomHolderLastView>() {
 
 
 
-    class MyCustomHolderLastView(itemView: View): RecyclerView.ViewHolder(itemView){
+    class MyCustomHolderLastView(itemView: View, clickItem: (position: Int) -> Unit): RecyclerView.ViewHolder(itemView){
         val txtTitle = itemView.findViewById<TextView>(R.id.lastviewProductTitle)
         val productImage = itemView.findViewById<ImageView>(R.id.lastviewImage)
         val lastLinear = itemView.findViewById<LinearLayout>(R.id.lastLinear)
+
+        init {
+            itemView.setOnClickListener {
+                clickItem(adapterPosition)
+            }
+        }
 
         fun bindData(product : Product, colorFirst : Int, colorSecond : Int, colorPosition: Int) {
             txtTitle.text = product.name
@@ -36,7 +42,7 @@ class ProductAllAdapter(var productList : List<Product>) : RecyclerView.Adapter<
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyCustomHolderLastView {
         var view = LayoutInflater.from(parent.context).inflate(R.layout.lastview_product_item, parent, false)
-        return MyCustomHolderLastView(view)
+        return MyCustomHolderLastView(view, clickItem)
     }
 
     override fun onBindViewHolder(holder: MyCustomHolderLastView, position: Int) {
