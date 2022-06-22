@@ -28,9 +28,10 @@ latitude infos. I am getting this data over the internet using the retrofit libr
 *VIEWPAGER<br>
 *GOOGLE MAP API'S<br>
 
-<img height="32" width="32" src="https://resimyukle.io/r/RPnMIMpLP7"/> <br>
+![WhatsApp Image 2022-05-23 at 15 19 42](https://user-images.githubusercontent.com/57020362/175015113-c9b590cb-a07b-49e1-aa90-d2cde5f7cedb.jpeg) <br>
+![WhatsApp Image 2022-05-23 at 15 24 35](https://user-images.githubusercontent.com/57020362/175015148-091d569a-8e94-45c5-a8bc-cd532cbc5289.jpeg)
 
-<img height="32" width="32" src="https://resimyukle.io/r/OOFWWTBEFU"/>
+
 
 
 
